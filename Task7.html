@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="styleSheet" href="Task7.css">
+    <script src="Task7.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-nav-section">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRePPIeYS4u1HX9klM5qKIFVcevOVZNIGxRjQ&s" class="logo">
+        </div>
+        <div>
+            <ul class="list-content">
+                <li>Home</li>
+                <li>About</li>
+                <li>Cart</li>
+                <li>Prices</li>
+            </ul>
+        </div>
+    </div>
+    <div class="input-container">
+        <div class="search-wrapper">
+            <input type="search" class="search" placeholder="Search here">
+        </div>
+        <div class="filter-wrapper">
+            <select id="sortPrice">
+                <option value="">Sort by Price</option>
+                <option value="low">Low → High</option>
+                <option value="high">High → Low</option>
+            </select>
+            <select id="categoryfilter">
+                <option value="men's clothing">Mens</option>
+                <option value="women's clothing">Womens</option>
+                <option value="electronics">Electronics</option>
+                <option value="jewelery">Jewelery</option>
+            </select>
+        </div>
+    </div>
+    
+
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="closeModal">&times;</span>
+        <div id="modalBody"></div>
+    </div>
+</div>
+
+    <p class="loading">Loading...</p>
+    <ol class="maincontainer-list"></ol>
+    
+</body>
+</html>
